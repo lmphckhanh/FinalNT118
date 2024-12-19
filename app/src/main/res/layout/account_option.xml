@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="91dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/back3" />
+
+    <TextView
+
+        android:id="@+id/textView13"
+        android:layout_width="383dp"
+        android:layout_height="76dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/account_option"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edit_text_background1"
+        android:contentDescription="@string/todo2"
+        android:gravity="center_vertical"
+        android:onClick="openLanguageSettings"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332"> <!-- sự kiện click -->
+
+        <TextView
+            android:id="@+id/tvGotoAccountOption"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+
+            android:gravity="fill_vertical"
+            android:text="@string/edit_profile_information"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/todo3"
+            android:src="@drawable/arrow"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edit_text_background1"
+        android:contentDescription="@string/todo2"
+        android:gravity="center_vertical"
+        android:onClick="openLanguageSettings"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484"> <!-- sự kiện click -->
+
+        <TextView
+            android:id="@+id/tvGotoAccountOption1"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+
+            android:gravity="fill_vertical"
+            android:text="Change Password"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/todo3"
+            android:src="@drawable/arrow"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
